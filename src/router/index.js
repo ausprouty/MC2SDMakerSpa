@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import notFound from "@/views/NotFound.vue";
 // see    https://stackoverflow.com/questions/46590760/vue-js-2-multiple-routing-files
 //import routesSpaHope from "./routesSpaHope.js";
-//import routesSpaMultiply1 from "./routesSpaMultiply1.js";
+import routesSpaMultiply1 from "./routesSpaMultiply1.js";
 import routesSpaMultiply2 from "./routesSpaMultiply2.js";
 import routesSpaMultiply3 from "./routesSpaMultiply3.js";
 //import routesSpaProphet from "./routesSpaProphet.js";
@@ -14,7 +14,7 @@ const router = createRouter({
   routes: [
 
  //   ...routesSpaHope,
-  //  ...routesSpaMultiply1,
+    ...routesSpaMultiply1,
     ...routesSpaMultiply2,
     ...routesSpaMultiply3,
   //  ...routesSpaProphet,

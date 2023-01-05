@@ -254,7 +254,7 @@ export default {
 
 
 
-</ii>
+</li>
 </ul>
 
 
@@ -318,7 +318,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-			  
+
 			<td class="social"  @click="share('android', 'spa', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

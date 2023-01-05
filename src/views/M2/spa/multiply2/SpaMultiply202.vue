@@ -271,14 +271,14 @@ export default {
             </div>
             <!-- end bible -->
           </div>
-          y <span class="popup-link" @click="popUp('pop4')"> Hebreos 2:17</span>
+          y <span class="popup-link" @click="popUp('pop4')"> Hebreos 2:17</span>.
 
           <div class="popup invisible" id="pop4"><!-- begin bible -->
             <p><sup class="versenum">17&nbsp;</sup>Por eso era preciso que en todo se asemejara a sus hermanos, para ser
               un sumo sacerdote fiel y misericordioso al servicio de Dios, a fin de expiar los pecados del pueblo.</p>
             <!-- end bible -->
           </div>
-          . Jes&uacute;s deja la gloria del cielo por una tierra en la derrota, una tierra en bajeza. La Biblia dice que
+          Jes&uacute;s deja la gloria del cielo por una tierra en la derrota, una tierra en bajeza. La Biblia dice que
           &quot;&Eacute;l fue hecho como nosotros en todos los sentidos&quot;. &iexcl;Jes&uacute;s hizo un gran
           sacrificio para convertirse en uno de nosotros! El Creador entra en la creaci&oacute;n, para que &Eacute;l sea
           nuestro sumo sacerdote y nuestro camino a Dios (<span class="popup-link" @click="popUp('pop5')"> Juan
@@ -289,87 +289,84 @@ export default {
               Jes&uacute;s&mdash;. Nadie llega al Padre sino por m&iacute;.</p>
             <!-- end bible -->
           </div>
-          &nbsp;Estudio adicional: <span class="popup-link" @click="popUp('pop6')"> Lucas 2:1-20</span>;
-
+          &nbsp;
+        </li>
+        <li class="nobreak-final-final">Estudio adicional: <span class="popup-link" @click="popUp('pop6')"> Lucas
+            2:1-20</span>;
           <div class="popup invisible" id="pop6"><!-- begin bible -->
-            <div>
-              <h3>Nacimiento de Jes&uacute;s</h3>
+            <h3>Nacimiento de Jes&uacute;s</h3>
 
-              <p><sup class="versenum">1 </sup>Por aquellos d&iacute;as Augusto C&eacute;sar decret&oacute; que se
-                levantara un censo en todo el Imperio romano.<sup class="versenum">2&nbsp;</sup>(Este primer censo se
-                efectu&oacute; cuando Cirenio gobernaba en Siria).<sup class="versenum">3&nbsp;</sup>As&iacute; que iban
-                todos a inscribirse, cada cual a su propio pueblo.</p>
+            <p><sup class="versenum">1 </sup>Por aquellos d&iacute;as Augusto C&eacute;sar decret&oacute; que se
+              levantara un censo en todo el Imperio romano.<sup class="versenum">2&nbsp;</sup>(Este primer censo se
+              efectu&oacute; cuando Cirenio gobernaba en Siria).<sup class="versenum">3&nbsp;</sup>As&iacute; que iban
+              todos a inscribirse, cada cual a su propio pueblo.</p>
 
-              <p><sup class="versenum">4&nbsp;</sup>Tambi&eacute;n Jos&eacute;, que era descendiente del rey David,
-                subi&oacute; de Nazaret, ciudad de Galilea, a Judea. Fue a Bel&eacute;n, la Ciudad de David,<sup
-                  class="versenum">5&nbsp;</sup>para inscribirse junto con Mar&iacute;a su esposa. Ella se encontraba
-                encinta<sup class="versenum">6&nbsp;</sup>y, mientras estaban all&iacute;, se le cumpli&oacute; el
-                tiempo.<sup class="versenum">7&nbsp;</sup>As&iacute; que dio a luz a su hijo primog&eacute;nito. Lo
-                envolvi&oacute; en pa&ntilde;ales y lo acost&oacute; en un pesebre, porque no hab&iacute;a lugar para
-                ellos en la posada.</p>
+            <p><sup class="versenum">4&nbsp;</sup>Tambi&eacute;n Jos&eacute;, que era descendiente del rey David,
+              subi&oacute; de Nazaret, ciudad de Galilea, a Judea. Fue a Bel&eacute;n, la Ciudad de David,<sup
+                class="versenum">5&nbsp;</sup>para inscribirse junto con Mar&iacute;a su esposa. Ella se encontraba
+              encinta<sup class="versenum">6&nbsp;</sup>y, mientras estaban all&iacute;, se le cumpli&oacute; el
+              tiempo.<sup class="versenum">7&nbsp;</sup>As&iacute; que dio a luz a su hijo primog&eacute;nito. Lo
+              envolvi&oacute; en pa&ntilde;ales y lo acost&oacute; en un pesebre, porque no hab&iacute;a lugar para
+              ellos en la posada.</p>
 
-              <p><sup class="versenum">8&nbsp;</sup>En esa misma regi&oacute;n hab&iacute;a unos pastores que pasaban la
-                noche en el campo, turn&aacute;ndose para cuidar sus reba&ntilde;os.<sup
-                  class="versenum">9&nbsp;</sup>Sucedi&oacute; que un &aacute;ngel del Se&ntilde;or se les
-                apareci&oacute;. La gloria del Se&ntilde;or los envolvi&oacute; en su luz, y se llenaron de temor.<sup
-                  class="versenum">10&nbsp;</sup>Pero el &aacute;ngel les dijo: &laquo;No tengan miedo. Miren que les
-                traigo buenas noticias que ser&aacute;n motivo de mucha alegr&iacute;a para todo el pueblo.<sup
-                  class="versenum">11&nbsp;</sup>Hoy les ha nacido en la Ciudad de David un Salvador, que es Cristo el
-                Se&ntilde;or.<sup class="versenum">12&nbsp;</sup>Esto les servir&aacute; de se&ntilde;al:
-                Encontrar&aacute;n a un ni&ntilde;o envuelto en pa&ntilde;ales y acostado en un pesebre&raquo;.</p>
+            <p><sup class="versenum">8&nbsp;</sup>En esa misma regi&oacute;n hab&iacute;a unos pastores que pasaban la
+              noche en el campo, turn&aacute;ndose para cuidar sus reba&ntilde;os.<sup
+                class="versenum">9&nbsp;</sup>Sucedi&oacute; que un &aacute;ngel del Se&ntilde;or se les
+              apareci&oacute;. La gloria del Se&ntilde;or los envolvi&oacute; en su luz, y se llenaron de temor.<sup
+                class="versenum">10&nbsp;</sup>Pero el &aacute;ngel les dijo: &laquo;No tengan miedo. Miren que les
+              traigo buenas noticias que ser&aacute;n motivo de mucha alegr&iacute;a para todo el pueblo.<sup
+                class="versenum">11&nbsp;</sup>Hoy les ha nacido en la Ciudad de David un Salvador, que es Cristo el
+              Se&ntilde;or.<sup class="versenum">12&nbsp;</sup>Esto les servir&aacute; de se&ntilde;al:
+              Encontrar&aacute;n a un ni&ntilde;o envuelto en pa&ntilde;ales y acostado en un pesebre&raquo;.</p>
 
-              <p><sup class="versenum">13&nbsp;</sup>De repente apareci&oacute; una multitud de &aacute;ngeles del
-                cielo, que alababan a Dios y dec&iacute;an:</p>
+            <p><sup class="versenum">13&nbsp;</sup>De repente apareci&oacute; una multitud de &aacute;ngeles del cielo,
+              que alababan a Dios y dec&iacute;an:</p>
 
-              <p><sup class="versenum">14&nbsp;</sup>&laquo;Gloria a Dios en las alturas,<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;y en la tierra paz a los que gozan de su buena voluntad&raquo;.</p>
-              <p><sup class="versenum">15&nbsp;</sup>Cuando los &aacute;ngeles se fueron al cielo, los pastores se
-                dijeron unos a otros: &laquo;Vamos a Bel&eacute;n, a ver esto que ha pasado y que el Se&ntilde;or nos ha
-                dado a conocer&raquo;.</p>
+            <p><sup class="versenum">14&nbsp;</sup>&laquo;Gloria a Dios en las alturas,<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;y en la tierra paz a los que gozan de su buena voluntad&raquo;.</p>
 
-              <p><sup class="versenum">16&nbsp;</sup>As&iacute; que fueron de prisa y encontraron a Mar&iacute;a y a
-                Jos&eacute;, y al ni&ntilde;o que estaba acostado en el pesebre.<sup
-                  class="versenum">17&nbsp;</sup>Cuando vieron al ni&ntilde;o, contaron lo que les hab&iacute;an dicho
-                acerca de &eacute;l,<sup class="versenum">18&nbsp;</sup>y cuantos lo oyeron se asombraron de lo que los
-                pastores dec&iacute;an.<sup class="versenum">19&nbsp;</sup>Mar&iacute;a, por su parte, guardaba todas
-                estas cosas en su coraz&oacute;n y meditaba acerca de ellas.<sup class="versenum">20&nbsp;</sup>Los
-                pastores regresaron glorificando y alabando a Dios por lo que hab&iacute;an visto y o&iacute;do, pues
-                todo sucedi&oacute; tal como se les hab&iacute;a dicho.</p>
-              <!-- end bible -->
-            </div>
-            <span class="popup-link" @click="popUp('pop7')"> Mateo 1: 18-25</span>.
+            <p><sup class="versenum">15&nbsp;</sup>Cuando los &aacute;ngeles se fueron al cielo, los pastores se dijeron
+              unos a otros: &laquo;Vamos a Bel&eacute;n, a ver esto que ha pasado y que el Se&ntilde;or nos ha dado a
+              conocer&raquo;.</p>
 
-            <div class="popup invisible" id="pop7"><!-- begin bible -->
-              <p><sup class="versenum">18&nbsp;</sup>El nacimiento de Jes&uacute;s, el Cristo, fue as&iacute;: Su madre,
-                Mar&iacute;a, estaba comprometida para casarse con Jos&eacute;, pero, antes de unirse a &eacute;l,
-                result&oacute; que estaba encinta por obra del Esp&iacute;ritu Santo.<sup
-                  class="versenum">19&nbsp;</sup>Como Jos&eacute;, su esposo, era un hombre justo y no quer&iacute;a
-                exponerla a verg&uuml;enza p&uacute;blica, resolvi&oacute; divorciarse de ella en secreto.</p>
+            <p><sup class="versenum">16&nbsp;</sup>As&iacute; que fueron de prisa y encontraron a Mar&iacute;a y a
+              Jos&eacute;, y al ni&ntilde;o que estaba acostado en el pesebre.<sup class="versenum">17&nbsp;</sup>Cuando
+              vieron al ni&ntilde;o, contaron lo que les hab&iacute;an dicho acerca de &eacute;l,<sup
+                class="versenum">18&nbsp;</sup>y cuantos lo oyeron se asombraron de lo que los pastores
+              dec&iacute;an.<sup class="versenum">19&nbsp;</sup>Mar&iacute;a, por su parte, guardaba todas estas cosas
+              en su coraz&oacute;n y meditaba acerca de ellas.<sup class="versenum">20&nbsp;</sup>Los pastores
+              regresaron glorificando y alabando a Dios por lo que hab&iacute;an visto y o&iacute;do, pues todo
+              sucedi&oacute; tal como se les hab&iacute;a dicho.</p>
+            <!-- end bible -->
+          </div>
+          <span class="popup-link" @click="popUp('pop7')"> Mateo 1: 18-25</span>.
 
-              <p><sup class="versenum">20&nbsp;</sup>Pero, cuando &eacute;l estaba considerando hacerlo, se le
-                apareci&oacute; en sue&ntilde;os un &aacute;ngel del Se&ntilde;or y le dijo: &laquo;Jos&eacute;, hijo de
-                David, no temas recibir a Mar&iacute;a por esposa, porque ella ha concebido por obra del Esp&iacute;ritu
-                Santo.<sup class="versenum">21&nbsp;</sup>Dar&aacute; a luz un hijo, y le pondr&aacute;s por nombre
-                Jes&uacute;s, porque &eacute;l salvar&aacute; a su pueblo de sus pecados&raquo;.</p>
+          <div class="popup invisible" id="pop7"><!-- begin bible -->
+            <p><sup class="versenum">18&nbsp;</sup>El nacimiento de Jes&uacute;s, el Cristo, fue as&iacute;: Su madre,
+              Mar&iacute;a, estaba comprometida para casarse con Jos&eacute;, pero, antes de unirse a &eacute;l,
+              result&oacute; que estaba encinta por obra del Esp&iacute;ritu Santo.<sup
+                class="versenum">19&nbsp;</sup>Como Jos&eacute;, su esposo, era un hombre justo y no quer&iacute;a
+              exponerla a verg&uuml;enza p&uacute;blica, resolvi&oacute; divorciarse de ella en secreto.</p>
 
-              <p><sup class="versenum">22&nbsp;</sup>Todo esto sucedi&oacute; para que se cumpliera lo que el
-                Se&ntilde;or hab&iacute;a dicho por medio del profeta:<sup class="versenum">23&nbsp;</sup>&laquo;La
-                virgen concebir&aacute; y dar&aacute; a luz un hijo, y lo llamar&aacute;n Emanuel&raquo; (que significa
-                &laquo;Dios con nosotros&raquo;).</p>
+            <p><sup class="versenum">20&nbsp;</sup>Pero, cuando &eacute;l estaba considerando hacerlo, se le
+              apareci&oacute; en sue&ntilde;os un &aacute;ngel del Se&ntilde;or y le dijo: &laquo;Jos&eacute;, hijo de
+              David, no temas recibir a Mar&iacute;a por esposa, porque ella ha concebido por obra del Esp&iacute;ritu
+              Santo.<sup class="versenum">21&nbsp;</sup>Dar&aacute; a luz un hijo, y le pondr&aacute;s por nombre
+              Jes&uacute;s, porque &eacute;l salvar&aacute; a su pueblo de sus pecados&raquo;.</p>
 
-              <p><sup class="versenum">24&nbsp;</sup>Cuando Jos&eacute; se despert&oacute;, hizo lo que el &aacute;ngel
-                del Se&ntilde;or le hab&iacute;a mandado y recibi&oacute; a Mar&iacute;a por esposa.<sup
-                  class="versenum">25&nbsp;</sup>Pero no tuvo relaciones conyugales con ella hasta que dio a luz un
-                hijo, a quien le puso por nombre Jes&uacute;s.</p>
-              <!-- end bible -->
-            </div>
+            <p><sup class="versenum">22&nbsp;</sup>Todo esto sucedi&oacute; para que se cumpliera lo que el Se&ntilde;or
+              hab&iacute;a dicho por medio del profeta:<sup class="versenum">23&nbsp;</sup>&laquo;La virgen
+              concebir&aacute; y dar&aacute; a luz un hijo, y lo llamar&aacute;n Emanuel&raquo; (que significa
+              &laquo;Dios con nosotros&raquo;).</p>
+
+            <p><sup class="versenum">24&nbsp;</sup>Cuando Jos&eacute; se despert&oacute;, hizo lo que el &aacute;ngel
+              del Se&ntilde;or le hab&iacute;a mandado y recibi&oacute; a Mar&iacute;a por esposa.<sup
+                class="versenum">25&nbsp;</sup>Pero no tuvo relaciones conyugales con ella hasta que dio a luz un hijo,
+              a quien le puso por nombre Jes&uacute;s.</p>
+            <!-- end bible -->
+          </div>
         </li>
       </ul>
-
-      <ul>
-      </ul>
-
-      <p>&nbsp;</p>
     </div>
 
     <p><em>Practique la entrega y la comuni&oacute;n aqu&iacute; o en la secci&oacute;n Preparaci&oacute;n para la
