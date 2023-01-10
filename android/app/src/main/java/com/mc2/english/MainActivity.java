@@ -1,5 +1,6 @@
-package com.mc2.english;
+package com.mc2.spanish;
 
 import com.getcapacitor.BridgeActivity;
 
-public class MainActivity extends BridgeActivity {}
+public class MainActivity extends BridgeActivity {
+}
