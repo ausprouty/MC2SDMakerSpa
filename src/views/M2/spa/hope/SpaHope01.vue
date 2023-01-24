@@ -88,7 +88,7 @@ export default {
 
 <h2>Contexto</h2>
 
-<button id="MC2/spa/video/hope/01.mp4" type="button" class="external-movie">
+<button id="MC2/spa/video/hope/01-100.mp4" type="button" class="external-movie">
          Mira &nbsp;Contexto de la historia&nbsp;</button>
     <div class="collapsed"></div>
 
@@ -136,7 +136,7 @@ export default {
 
 </div>
 
-<button id="MC2/spa/video/hope/01-1.mp4" type="button" class="external-movie">
+<button id="MC2/spa/video/hope/01.mp4" type="button" class="external-movie">
          Mira &nbsp;Lucas 7:36-50&nbsp;</button>
     <div class="collapsed"></div>
 
@@ -161,7 +161,7 @@ export default {
 
 <div class="lesson">
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
@@ -195,7 +195,7 @@ export default {
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"

@@ -89,7 +89,7 @@ export default {
 <h2>3. Contexto</h2>
 
 
-<button id="MC2/spa/video/hope/05.mp4" type="button" class="external-movie">
+<button id="MC2/spa/video/hope/05-100.mp4" type="button" class="external-movie">
          Mira &nbsp;Contexto de la historia&nbsp;</button>
     <div class="collapsed"></div>
 
@@ -166,7 +166,7 @@ export default {
 </div>
 
 
-<button id="MC2/spa/video/hope/05-1.mp4" type="button" class="external-movie">
+<button id="MC2/spa/video/hope/05.mp4" type="button" class="external-movie">
          Mira &nbsp;Lucas 22:66-23:25&nbsp;</button>
     <div class="collapsed"></div>
 
