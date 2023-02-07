@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -185,7 +181,7 @@ export default {
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
@@ -262,7 +258,7 @@ Tabita es un ejemplo de una mujer que fue activa en el ministerio cuidando a los
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"

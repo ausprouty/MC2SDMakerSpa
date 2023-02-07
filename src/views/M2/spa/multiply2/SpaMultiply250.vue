@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -257,7 +253,7 @@ export default {
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
@@ -281,14 +277,14 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">&iexcl;&Eacute;l ha resucitado de entre los muertos! La Biblia dice que la resurrecci&oacute;n de Jes&uacute;s lo cambia todo. &quot;Ahora, si morimos con Cristo, creemos que tambi&eacute;n viviremos con &eacute;l. Porque sabemos que desde que Cristo resucit&oacute; de entre los muertos, no puede morir de nuevo; la muerte ya no tiene dominio sobre &eacute;l, venci&oacute; a la muerte, muri&oacute; al pecado de una vez por todas; pero la vida que vive la vive para Dios. De la misma manera, cons&iacute;stete muerto al pecado, pero vivo a Dios en Cristo Jes&uacute;s.&quot; (<span class="popup-link" @click = "popUp('pop3')"> Romanos 6:8- 11</span>
+	<li class="nobreak-final-final">&iexcl;&Eacute;l ha resucitado de entre los muertos! La Biblia dice que la resurrecci&oacute;n de Jes&uacute;s lo cambia todo. &quot;Ahora, si morimos con Cristo, creemos que tambi&eacute;n viviremos con &eacute;l. Porque sabemos que desde que Cristo resucit&oacute; de entre los muertos, no puede morir de nuevo; la muerte ya no tiene dominio sobre &eacute;l, venci&oacute; a la muerte, muri&oacute; al pecado de una vez por todas; pero la vida que vive la vive para Dios. De la misma manera, cons&iacute;stete muerto al pecado, pero vivo a Dios en Cristo Jes&uacute;s.&quot; (<span class="popup-link" @click = "popUp('pop3')"> Romanos 6:8- 11</span>).
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<p><sup class="versenum">8&nbsp;</sup>Ahora bien, si hemos muerto con Cristo, confiamos que tambi&eacute;n viviremos con &eacute;l.<sup class="versenum">9&nbsp;</sup>Pues sabemos que Cristo, por haber sido levantado de entre los muertos, ya no puede volver a morir; la muerte ya no tiene dominio sobre &eacute;l.<sup class="versenum">10&nbsp;</sup>En cuanto a su muerte, muri&oacute; al pecado una vez y para siempre; en cuanto a su vida, vive para Dios.</p>
 
 	<p><sup class="versenum">11&nbsp;</sup>De la misma manera, tambi&eacute;n ustedes consid&eacute;rense muertos al pecado, pero vivos para Dios en Cristo Jes&uacute;s.</p>
 	<!-- end bible --></div>
-	). El poder de vivir la vida est&aacute; en el poder de la victoria de Jes&uacute;s sobre la muerte. La resurrecci&oacute;n de Jes&uacute;s nos da poder para derrotar el pecado en nuestras vidas. El poder de Jes&uacute;s y Su resurrecci&oacute;n fluye a trav&eacute;s de nosotros a medida que dejamos de lado nuestra voluntad y permitimos que Jes&uacute;s viva en y a trav&eacute;s de nosotros. El liderazgo de resurrecci&oacute;n es el liderazgo que est&aacute; permitiendo que Jes&uacute;s viva en y a trav&eacute;s de nosotros. Liderar como Jes&uacute;s es radicalmente diferente al liderazgo del mundo que busca promoverse a s&iacute; mismo y controlar a los dem&aacute;s.</li>
+	El poder de vivir la vida est&aacute; en el poder de la victoria de Jes&uacute;s sobre la muerte. La resurrecci&oacute;n de Jes&uacute;s nos da poder para derrotar el pecado en nuestras vidas. El poder de Jes&uacute;s y Su resurrecci&oacute;n fluye a trav&eacute;s de nosotros a medida que dejamos de lado nuestra voluntad y permitimos que Jes&uacute;s viva en y a trav&eacute;s de nosotros. El liderazgo de resurrecci&oacute;n es el liderazgo que est&aacute; permitiendo que Jes&uacute;s viva en y a trav&eacute;s de nosotros. Liderar como Jes&uacute;s es radicalmente diferente al liderazgo del mundo que busca promoverse a s&iacute; mismo y controlar a los dem&aacute;s.</li>
 </ul>
 
 <ul>
@@ -359,7 +355,7 @@ export default {
 
 	<p><sup class="versenum">46&nbsp;</sup>&mdash;Esto es lo que est&aacute; escrito &mdash;les explic&oacute;&mdash;: que el Cristo padecer&aacute; y resucitar&aacute; al tercer d&iacute;a,<sup class="versenum">47&nbsp;</sup>y en su nombre se predicar&aacute;n el arrepentimiento y el perd&oacute;n de pecados a todas las naciones, comenzando por Jerusal&eacute;n.<sup class="versenum">48&nbsp;</sup>Ustedes son testigos de estas cosas.<sup class="versenum">49&nbsp;</sup>Ahora voy a enviarles lo que ha prometido mi Padre; pero ustedes qu&eacute;dense en la ciudad hasta que sean revestidos del poder de lo alto.</p>
 	<!-- end bible --></div>
-	<span class="popup-link" @click = "popUp('pop5')"> Mateo 27:57-28:15</span>.
+	<span class="popup-link" @click = "popUp('pop5')"> Mateo 27:57-28:15</span>;&nbsp;
 
 	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>
@@ -400,13 +396,6 @@ export default {
 	<p><sup class="versenum">11&nbsp;</sup>Mientras las mujeres iban de camino, algunos de los guardias entraron en la ciudad e informaron a los jefes de los sacerdotes de todo lo que hab&iacute;a sucedido.<sup class="versenum">12&nbsp;</sup>Despu&eacute;s de reunirse estos jefes con los ancianos y de trazar un plan, les dieron a los soldados una fuerte suma de dinero<sup class="versenum">13&nbsp;</sup>y les encargaron: &laquo;Digan que los disc&iacute;pulos de Jes&uacute;s vinieron por la noche y que, mientras ustedes dorm&iacute;an, se robaron el cuerpo.<sup class="versenum">14&nbsp;</sup>Y, si el gobernador llega a enterarse de esto, nosotros responderemos por ustedes y les evitaremos cualquier problema&raquo;.</p>
 
 	<p><sup class="versenum">15&nbsp;</sup>As&iacute; que los soldados tomaron el dinero e hicieron como se les hab&iacute;a instruido. Esta es la versi&oacute;n de los sucesos que hasta el d&iacute;a de hoy ha circulado entre los jud&iacute;os.</p>
-
-	<h4>Cross references</h4>
-
-	<ol>
-		<li id="ces-NVI-24157A"><a href="#es-NVI-24157" title="Go to Mateo 27:57">27:57-61</a> : Mr 15:42-47; Lc 23:50-56; Jn 19:38-42</li>
-		<li id="ces-NVI-24167B"><a href="#es-NVI-24167" title="Go to Mateo 28:1">28:1-8</a> : Mr 16:1-8; Lc 24:1-10</li>
-	</ol>
 	</div>
 	<!--end of crossrefs--></div>
 	</div>
@@ -415,7 +404,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	; <span class="popup-link" @click = "popUp('pop6')"> Marcos 15:42- 16:18</span>
+	&nbsp;<span class="popup-link" @click = "popUp('pop6')"> Marcos 15:42- 16:18</span>.
 
 	<div class="popup invisible" id="pop6"><!-- begin bible -->
 	<h3>Sepultura de Jes&uacute;s</h3>
@@ -440,11 +429,6 @@ export default {
 
 	<p><sup class="versenum">15&nbsp;</sup>Les dijo: &laquo;Vayan por todo el mundo y anuncien las buenas nuevas a toda criatura.<sup class="versenum">16&nbsp;</sup>El que crea y sea bautizado ser&aacute; salvo, pero el que no crea ser&aacute; condenado.<sup class="versenum">17&nbsp;</sup>Estas se&ntilde;ales acompa&ntilde;ar&aacute;n a los que crean: en mi nombre expulsar&aacute;n demonios; hablar&aacute;n en nuevas lenguas;<sup class="versenum">18&nbsp;</sup>tomar&aacute;n en sus manos serpientes; y, cuando beban algo venenoso, no les har&aacute; da&ntilde;o alguno; pondr&aacute;n las manos sobre los enfermos, y estos recobrar&aacute;n la salud&raquo;.</p>
 	<!-- end bible --></div>
-
-	<p>&nbsp;</p>
-
-	<ul>
-	</ul>
 
 	<p>&nbsp;</p>
 	</li>
@@ -480,7 +464,7 @@ export default {
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"

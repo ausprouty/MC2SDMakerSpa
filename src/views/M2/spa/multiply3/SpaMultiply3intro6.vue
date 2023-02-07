@@ -3,9 +3,14 @@ import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
+import VueImageZoomer from '@/components/VueImageZoomer.vue'
+import '@/assets/styles/vueImageZoomer.css';
 
 
 export default {
+  components: {
+    VueImageZoomer
+  },
    methods:{
     async addNote(noteid){
        var noteText = document.getElementById(noteid).value
@@ -43,11 +48,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -62,7 +63,14 @@ export default {
 <div id="showVideoOptions"></div>
   <p><strong>Representando el Movimiento de Jes&uacute;s&nbsp;[57- 62 d.C.]</strong></p>
 
-<p><img alt="" src="@/assets/images/eng/multiply3/Trip4.png" /></p>
+<p>   
+    <div class="zoom-image">
+    <vue-image-zoomer
+    regular="/images/zoom/spa/multiply3/Trip4.png" 
+    zoom="/images/zoom/spa/multiply3/Trip4.png" :zoom-amount="3" img-class="img-fluid" alt="">
+    <img src="@/assets/images/spa/multiply3/Trip4.png" img-class="img-fluid" />
+    </vue-image-zoomer>
+    </div></p>
 
 <p>Despu&eacute;s de sentar las bases de 6-7 centros de movimiento en toda la parte oriental del Imperio Romano, el papel de Pablo ahora cambia a oportunidades para defender la fe. Este per&iacute;odo est&aacute; marcado por largos viajes, prisi&oacute;n, circunstancias peligrosas y defensas legales ante los m&aacute;s altos l&iacute;deres del gobierno en Judea y Roma.</p>
 

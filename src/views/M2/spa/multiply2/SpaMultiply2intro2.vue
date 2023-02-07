@@ -3,9 +3,14 @@ import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
+import VueImageZoomer from '@/components/VueImageZoomer.vue'
+import '@/assets/styles/vueImageZoomer.css';
 
 
 export default {
+  components: {
+    VueImageZoomer
+  },
    methods:{
     async addNote(noteid){
        var noteText = document.getElementById(noteid).value
@@ -43,11 +48,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -60,7 +61,14 @@ export default {
 <div class="page_content ltr">
 <h1>Periodo 2: Fundamentos del ministerio</h1>
 <div id="showVideoOptions"></div>
-  <p style="text-align:justify"><span class="zoom"><img alt="" src="@/assets/images/spa/custom/Period2.png" style="width:100%" /></span></p>
+  <p style="text-align:justify">   
+    <div class="zoom-image">
+    <vue-image-zoomer
+    regular="/images/zoom/spa/custom/Period2.png" 
+    zoom="/images/zoom/spa/custom/Period2.png" :zoom-amount="3" img-class="img-fluid" alt="">
+    <img src="@/assets/images/spa/custom/Period2.png" img-class="img-fluid" />
+    </vue-image-zoomer>
+    </div></p>
 
 <h4>Alrededor de la primavera&nbsp;<span><span>26 d.C - finales del 27 d.C.&nbsp;</span></span></h4>
 

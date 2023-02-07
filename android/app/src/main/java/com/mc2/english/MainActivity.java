@@ -1,4 +1,4 @@
-package com.mc2.spanish;
+package spasd;
 
 import com.getcapacitor.BridgeActivity;
 

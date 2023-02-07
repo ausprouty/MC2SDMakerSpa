@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -181,7 +177,7 @@ export default {
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
@@ -254,7 +250,7 @@ export default {
 
 
 
-</li>
+</ii>
 </ul>
 
 
@@ -288,7 +284,7 @@ export default {
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
@@ -318,7 +314,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-
+			  
 			<td class="social"  @click="share('android', 'spa', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

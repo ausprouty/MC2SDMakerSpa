@@ -3,9 +3,14 @@ import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
+import VueImageZoomer from '@/components/VueImageZoomer.vue'
+import '@/assets/styles/vueImageZoomer.css';
 
 
 export default {
+  components: {
+    VueImageZoomer
+  },
    methods:{
     async addNote(noteid){
        var noteText = document.getElementById(noteid).value
@@ -43,11 +48,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -62,7 +63,14 @@ export default {
 <div id="showVideoOptions"></div>
   <p><strong>Entrenamiento de L&iacute;deres para Nuevos Centros de Movimiento&nbsp;(2do.&nbsp;Viaje Misionero desde Antioqu&iacute;a) [49 - 51 d.C.]</strong></p>
 
-<p><img alt="" src="@/assets/images/eng/multiply3/Trip2.png" />&nbsp;Este per&iacute;odo cubre el viaje del segundo equipo de misi&oacute;n que fue enviado desde Antioqu&iacute;a. Est&aacute; marcado por la apertura de nuevos centros provinciales al Evangelio, el aumento de los movimientos de creaci&oacute;n de disc&iacute;pulos y la adici&oacute;n de trabajadores del Reino.</p>
+<p>   
+    <div class="zoom-image">
+    <vue-image-zoomer
+    regular="/images/zoom/spa/multiply3/Trip2.png" 
+    zoom="/images/zoom/spa/multiply3/Trip2.png" :zoom-amount="3" img-class="img-fluid" alt="Trip 2">
+    <img src="@/assets/images/spa/multiply3/Trip2.png" img-class="img-fluid" />
+    </vue-image-zoomer>
+    </div>&nbsp;Este per&iacute;odo cubre el viaje del segundo equipo de misi&oacute;n que fue enviado desde Antioqu&iacute;a. Est&aacute; marcado por la apertura de nuevos centros provinciales al Evangelio, el aumento de los movimientos de creaci&oacute;n de disc&iacute;pulos y la adici&oacute;n de trabajadores del Reino.</p>
 
 <p>Cartas escritas durante este Per&iacute;odo</p>
 

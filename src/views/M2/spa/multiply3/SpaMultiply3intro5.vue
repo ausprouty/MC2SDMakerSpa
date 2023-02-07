@@ -3,9 +3,14 @@ import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
+import VueImageZoomer from '@/components/VueImageZoomer.vue'
+import '@/assets/styles/vueImageZoomer.css';
 
 
 export default {
+  components: {
+    VueImageZoomer
+  },
    methods:{
     async addNote(noteid){
        var noteText = document.getElementById(noteid).value
@@ -43,11 +48,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -62,7 +63,14 @@ export default {
 <div id="showVideoOptions"></div>
   <p><strong>Env&iacute;o, Multiplicaci&oacute;n y Entrenamiento de Movimientos&nbsp;<span lang="es"><span><span>(3er. Viaje Misionero desde Antioqu&iacute;a) [52 -57 d.C.]</span></span></span></strong></p>
 
-<p><img alt="" src="@/assets/images/eng/multiply3/Trip3.png" /></p>
+<p>   
+    <div class="zoom-image">
+    <vue-image-zoomer
+    regular="/images/zoom/spa/multiply3/Trip3.png" 
+    zoom="/images/zoom/spa/multiply3/Trip3.png" :zoom-amount="3" img-class="img-fluid" alt="">
+    <img src="@/assets/images/spa/multiply3/Trip3.png" img-class="img-fluid" />
+    </vue-image-zoomer>
+    </div></p>
 
 <p>Este per&iacute;odo abarca unos cinco a&ntilde;os. Varios centros de movimiento ya han estado multiplicando disc&iacute;pulos e iglesias por m&aacute;s de 6 a&ntilde;os. Durante este per&iacute;odo, se establece en <span lang="es"><span><span>&Eacute;feso</span></span></span> un gran centro de movimiento de env&iacute;o de misiones. Mientras que el trabajo de plantaci&oacute;n de iglesias est&aacute; echando ra&iacute;ces en &Eacute;feso, los l&iacute;deres est&aacute;n siendo enviados y las iglesias existentes est&aacute;n siendo entrenadas. El per&iacute;odo est&aacute; marcado por el entrenamiento diario, milagros extraordinarios, escritura de cartas y expansi&oacute;n del Reino para que toda la parte oriental del Imperio Romano puedan ser alcanzada.</p>
 
