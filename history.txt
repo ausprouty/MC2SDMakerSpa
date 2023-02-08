@@ -80,20 +80,3 @@ npm run build
 npx cap sync
 npx cap open android
 Build -> Build APK
-
-
- FAILURE: Build failed with an exception.
-[capacitor]
-[capacitor]         * What went wrong:
-[capacitor]         A problem occurred configuring project ':app'.
-[capacitor]         > Could not open proj generic class cache for build file 'C:\capacitor\MC2SDMakerSpa\android\app\build.gradle' (C:\Users\Bob\.gradle\caches\7.4.2\scripts\5fztgiuwzhto0y3zdpgbfad5f).
-[capacitor]         > BUG! exception in phase 'semantic analysis' in source unit '_BuildScript_' Unsupported class file major version 63
-[capacitor]
-[capacitor]         * Try:
-[capacitor]         > Run with --stacktrace option to get the stack trace.
-[capacitor]         > Run with --info or --debug option to get more log output.
-[capacitor]         > Run with --scan to get full insights.
-[capacitor]
-[capacitor]         * Get more help at https://help.gradle.org
-[capacitor]
-[capacitor]         BUILD FAILED in 2s
