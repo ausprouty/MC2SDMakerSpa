@@ -15,7 +15,6 @@ window.addEventListener("DOMContentLoaded", async () => {
   var noteSource = localStorage.getItem('mc2NoteSource')
   if (noteSource != 'localstorage'){
     const sqlite = new SQLiteConnection(CapacitorSQLite);
-
     try {
       const ret = await sqlite.checkConnectionsConsistency();
       const isConn = (await sqlite.isConnection("db_mc2notes")).result;

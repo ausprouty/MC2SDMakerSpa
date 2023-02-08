@@ -27,6 +27,47 @@ ionic cap add android
 ionic cap run android -l --external
 
 
+ionic cordova platform add browser -< bad
+
+FATAL EXCEPTION: main
+Process: com.mc2.spa, PID: 7846
+java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.mc2.spa/com.mc2.spa.MainActivity}: java.lang.ClassNotFoundException: Didn't find class "com.mc2.spa.MainActivity" on path: DexPathList[[zip file "/data/app/~~2rGM6VH9iJ8g5z3Ck3GPUQ==/com.mc2.spa-XfpkMYmt1SpoMRZrt2ncJQ==/base.apk"],nativeLibraryDirectories=[/data/app/~~2rGM6VH9iJ8g5z3Ck3GPUQ==/com.mc2.spa-XfpkMYmt1SpoMRZrt2ncJQ==/lib/x86, /data/app/~~2rGM6VH9iJ8g5z3Ck3GPUQ==/com.mc2.spa-XfpkMYmt1SpoMRZrt2ncJQ==/base.apk!/lib/x86, /system/lib, /system_ext/lib]]
+at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3365)
+at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3601)
+at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:85)
+at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135)
+at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95)
+at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2066)
+at android.os.Handler.dispatchMessage(Handler.java:106)
+at android.os.Looper.loop(Looper.java:223)
+at android.app.ActivityThread.main(ActivityThread.java:7656)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+
+Caused by: java.lang.ClassNotFoundException: Didn't find class "com.mc2.spa.MainActivity" on path: DexPathList[[zip file "/data/app/~~2rGM6VH9iJ8g5z3Ck3GPUQ==/com.mc2.spa-XfpkMYmt1SpoMRZrt2ncJQ==/base.apk"],nativeLibraryDirectories=[/data/app/~~2rGM6VH9iJ8g5z3Ck3GPUQ==/com.mc2.spa-XfpkMYmt1SpoMRZrt2ncJQ==/lib/x86, /data/app/~~2rGM6VH9iJ8g5z3Ck3GPUQ==/com.mc2.spa-XfpkMYmt1SpoMRZrt2ncJQ==/base.apk!/lib/x86, /system/lib, /system_ext/lib]]
+at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:207)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:95)
+at androidx.core.app.CoreComponentFactory.instantiateActivity(CoreComponentFactory.java:45)
+at android.app.Instrumentation.newActivity(Instrumentation.java:1253)
+at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3353)
+at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3601) 
+at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:85) 
+at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135) 
+at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95) 
+at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2066) 
+at android.os.Handler.dispatchMessage(Handler.java:106) 
+at android.os.Looper.loop(Looper.java:223) 
+at android.app.ActivityThread.main(ActivityThread.java:7656) 
+at java.lang.reflect.Method.invoke(Native Method) 
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592) 
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947) 
+
+so I renamed java/com/mc2/english to  java/com/mc2/spa
+
+
 DEV:
 
 npm run build
